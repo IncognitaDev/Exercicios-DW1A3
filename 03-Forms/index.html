@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header><h2>Forms</h2></header>
+
+    <div class="content">
+      <form onsubmit="">
+        <fieldset>
+          <legend>
+            <h2>Dados Pessoais</h2>
+          </legend>
+          <div class="field">
+            <label for="image">Imagem</label>
+            <input type="file" name="image" required />
+          </div>
+          <div class="form-group">
+            <div class="field">
+              <label for="name">Nome</label>
+              <input type="text" name="name" required />
+            </div>
+            <div class="field">
+              <label for="lastname">Sobrenome</label>
+              <input type="text" name="lastname" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="field">
+            Género
+            <div id="gender-field">
+              <input type="radio" name="gender" id="female" value="f" />
+              <label for="female">Feminino</label>
+              <input type="radio" name="gender" id="male" value="m" />
+              <label for="male">Masculino</label>
+              <input type="radio" name="gender" id="not" value="n" />
+              <label for="not">Não informar</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h2>Informações Profissionais</h2>
+          </legend>
+          <div class="field">
+            <label for="empresa">Empresa</label>
+            <input type="text" name="empresa" />
+          </div>
+          <div class="field">
+            <label for="cargo">Cargo</label>
+            <input type="text" name="cargo" />
+          </div>
+          <div class="field">
+            <label for="area">Area</label>
+            <select type="name">
+              <option value="frontend">Frontend</option>
+              <option value="Backend">Backend</option>
+              <option value="fullstack">Frontend</option>
+            </select>
+          </div>
+          <div class="field">
+            Linguagens
+            <div class="languages">
+              <input type="checkbox" name="languages" id="typescript" />
+              <label for="javascript">javascript</label>
+              <input type="checkbox" name="languages" id="java" />
+              <label for="typescript">typescript</label>
+              <input type="checkbox" name="languages" id="c#" />
+              <label for="java">java</label>
+              <input type="checkbox" name="languages" id="javascript" />
+              <label for="c#">c#</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="button-wrapper">
+          <input type="reset" value="limpar" />
+          <input type="submit" class="submit" value="cadastrar" />
+        </div>
+      </form>
+    </div>
+
+    <footer>by <a href="github.com/incognitadev">Luis Sousa</a></footer>
+  </body>
+</html>

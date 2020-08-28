@@ -1,0 +1,84 @@
+:root {
+  --color-primary: #34495e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #ecf0f1;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  min-width: 500px;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 40px;
+}
+
+form fieldset {
+  border: 0;
+}
+
+.form-group {
+  display: flex;
+}
+
+form .field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+form input,
+select {
+  background-color: #f0f0f5;
+
+  border-radius: 5px;
+
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+}
+
+form .form-group .field + .field {
+  margin-left: 20px;
+}
+
+#gender-field {
+  flex-direction: row;
+}
+
+form .button-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+form input.submit {
+  background: var(--color-primary);
+  color: whitesmoke;
+  font-weight: bold;
+}
